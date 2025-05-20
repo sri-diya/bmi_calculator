@@ -29,7 +29,8 @@ const App = () => {
       return;
     }
 
-    const bmi = Number(weight) / Number(height) ** 2;
+    //const bmi = Number(weight) / Number(height) *Number(height);
+    const bmi = weight / (height *height);
     setCalculateValue(bmi.toFixed(2));
 
     if (bmi < 18.5) {
